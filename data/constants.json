@@ -1,0 +1,167 @@
+{
+  "G": {
+    "value": 6.67430e-11,
+    "units": "m^3 kg^-1 s^-2",
+    "source": "CODATA 2018"
+  },
+  "k_B": {
+    "value": 1.380649e-23,
+    "units": "J K^-1",
+    "source": "CODATA 2018 (exact by SI redefinition)"
+  },
+  "L_sun": {
+    "value": 3.828e26,
+    "units": "W",
+    "source": "IAU 2015 nominal solar luminosity"
+  },
+  "t_sun": {
+    "value": 4.60e9,
+    "units": "years",
+    "source": "Connelly et al. 2012, Science 338:651"
+  },
+  "k_gyr_to_s": {
+    "value": 3.15576e16,
+    "units": "s/Gyr",
+    "source": "Julian year = 365.25 days exactly"
+  },
+  "T_surface": {
+    "value": 288,
+    "units": "K",
+    "source": "Earth mean surface temperature (Jones et al. 1999)"
+  },
+  "N_A": {
+    "value": 6.022e23,
+    "units": "mol^-1",
+    "source": "CODATA 2018"
+  },
+  "fg_per_mol_C": {
+    "value": 1.2e16,
+    "units": "fg/mol",
+    "source": "Molar mass of carbon (12 g/mol = 1.2e16 fg/mol)"
+  },
+  "earth_surface_area_cm2": {
+    "value": 5.1e18,
+    "units": "cm^2",
+    "source": "Earth surface area (5.1e14 m^2 = 5.1e18 cm^2)"
+  },
+  "archean_carbon_flux_min": {
+    "value": 1e6,
+    "units": "mol/cm^2/yr",
+    "source": "Canfield et al. 2006; Sleep & Bird 2008"
+  },
+  "archean_carbon_flux_max": {
+    "value": 1e10,
+    "units": "mol/cm^2/yr",
+    "source": "Canfield et al. 2006; Sleep & Bird 2008"
+  },
+  "proterozoic_biomass_min_fg": {
+    "value": 9e30,
+    "units": "fg C",
+    "source": "Crockford et al. 2023"
+  },
+  "proterozoic_biomass_max_fg": {
+    "value": 38.5e30,
+    "units": "fg C",
+    "source": "Crockford et al. 2023"
+  },
+  "metabolic_power_min_W_per_cell": {
+    "value": 1e-21,
+    "units": "W/cell",
+    "source": "Hoehler & Jorgensen 2013"
+  },
+  "metabolic_power_max_W_per_cell": {
+    "value": 3e-19,
+    "units": "W/cell",
+    "source": "Hoehler & Jorgensen 2013"
+  },
+  "average_cell_lifespan_yr": {
+    "value": 1.9026e-5,
+    "units": "yr",
+    "source": "Derived: ~10 min average (Hoehler & Jorgensen 2013)"
+  },
+  "ave_prokaryote_genome_Mb": {
+    "value": 3.2147,
+    "units": "Mb",
+    "source": "Landenmark et al. 2015, Biology Letters 11:20150299"
+  },
+  "carbon_per_cell_fg": {
+    "value": 86,
+    "units": "fg C/cell",
+    "source": "Whitman et al. 1998, PNAS 95:6578"
+  },
+  "modern_biosphere_Mb": {
+    "value": 5.3e31,
+    "units": "Mb",
+    "source": "Landenmark et al. 2015, Biology Letters 11:20150299"
+  },
+  "modern_biosphere_Mb_error": {
+    "value": 3.6e31,
+    "units": "Mb",
+    "source": "Landenmark et al. 2015, Biology Letters 11:20150299"
+  },
+  "modern_biosphere_power_TW": {
+    "value": 2800,
+    "units": "TW",
+    "source": "Hoehler et al. 2023"
+  },
+  "modern_biosphere_power_TW_error": {
+    "value": 270,
+    "units": "TW",
+    "source": "Hoehler et al. 2023"
+  },
+  "ISE_empirical": {
+    "value": 1.67e-15,
+    "units": "J/bit",
+    "source": "Derived from Hoehler 2023 + Landenmark 2015"
+  },
+  "ISE_empirical_error": {
+    "value": 1.14e-15,
+    "units": "J/bit",
+    "source": "Derived from Hoehler 2023 + Landenmark 2015"
+  },
+  "k2_Q_rocky_icy": {
+    "value": 0.006,
+    "units": "dimensionless",
+    "source": "Henning et al. 2009 (k2~0.3, Q~50)"
+  },
+  "k2_Q_giant": {
+    "value": 3e-5,
+    "units": "dimensionless",
+    "source": "Goldreich & Soter 1966"
+  },
+  "Ea_depurination": {
+    "value": 130000,
+    "units": "J/mol",
+    "source": "Lindahl & Nyberg 1972"
+  },
+  "T_sun_eff": {
+    "value": 5778,
+    "units": "K",
+    "source": "IAU 2015 nominal value"
+  },
+  "M_EARTH_KG": {
+    "value": 5.9722e24,
+    "units": "kg",
+    "source": "IAU 2015 Resolution B3"
+  },
+  "R_EARTH_M": {
+    "value": 6.3781e6,
+    "units": "m",
+    "source": "IAU 2015 Resolution B3"
+  },
+  "PC_TO_M": {
+    "value": 3.08567758149e16,
+    "units": "m",
+    "source": "IAU 2012 Resolution B2"
+  },
+  "AU_TO_M": {
+    "value": 1.495978707e11,
+    "units": "m",
+    "source": "IAU 2012 Resolution B2"
+  },  
+  "MASS_SUN": {
+    "value": 1.988475e30,
+    "units": "kg",
+    "source": "IAU 2015 Resolution B3"
+  }
+}

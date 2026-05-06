@@ -1,0 +1,41 @@
+{
+  "note": "Half-lives in Gyr; heat production in microW/kg of isotope; concentrations in kg/kg (BSE). Decay constants: lambda = ln(2)/T_1/2 in units of 1/Gyr.",
+  "isotopes": {
+    "U238": {
+      "H_uW_per_kg": 94.6,
+      "H_source": "Turcotte & Schubert 2002, Geodynamics, 2nd ed., Table 4.2",
+      "half_life_Gyr": 4.468,
+      "half_life_source": "Jaffey et al. 1971, Physical Review C 4:1889",
+      "C0_ppm": 0.031,
+      "C0_source": "Turcotte & Schubert 2002, Table 4.2 (BSE)",
+      "decay_constant_per_Gyr": 0.155136
+    },
+    "U235": {
+      "H_uW_per_kg": 568.7,
+      "H_source": "Turcotte & Schubert 2002, Geodynamics, 2nd ed., Table 4.2",
+      "half_life_Gyr": 0.7038,
+      "half_life_source": "Jaffey et al. 1971, Physical Review C 4:1889",
+      "C0_ppm": 0.0001,
+      "C0_source": "Turcotte & Schubert 2002, Table 4.2 (BSE)",
+      "decay_constant_per_Gyr": 0.984864
+    },
+    "Th232": {
+      "H_uW_per_kg": 26.4,
+      "H_source": "Turcotte & Schubert 2002, Geodynamics, 2nd ed., Table 4.2",
+      "half_life_Gyr": 14.05,
+      "half_life_source": "Le Roux & Glendenin 1963, Proc. Natl. Meeting on Nuclear Energy, Pretoria",
+      "C0_ppm": 0.124,
+      "C0_source": "Turcotte & Schubert 2002, Table 4.2 (BSE)",
+      "decay_constant_per_Gyr": 0.049334
+    },
+    "K40": {
+      "H_uW_per_kg": 29.2,
+      "H_source": "Turcotte & Schubert 2002, Geodynamics, 2nd ed., Table 4.2",
+      "half_life_Gyr": 1.250,
+      "half_life_source": "Beckinsale & Gale 1969, Earth and Planetary Science Letters 6:289",
+      "C0_ppm": 36.9,
+      "C0_source": "Turcotte & Schubert 2002, Table 4.2 (BSE)",
+      "decay_constant_per_Gyr": 0.554518
+    }
+  }
+}
