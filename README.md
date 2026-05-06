@@ -1,4 +1,4 @@
-# hinkston-energy-biosphere
+# energy-biosphere
 
 Code and data for Hinkston & Bradley, *Free Energy Budgets as
 Thermodynamic Constraints on Maximum Biosphere Size* (in preparation,
