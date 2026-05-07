@@ -42,8 +42,16 @@ Tested with Python 3.11.9; package versions are recorded in `requirements.txt`.
 
 ## Citation
 
-If you use this code or data, please cite the manuscript (citation
-to be added on acceptance).
+If you use this code or data, please cite the manuscript and this repository.
+Citation metadata are provided in `CITATION.cff`; DOI information will be added
+after archival release.
+
+## License
+
+The analysis code is released under the MIT License; see `LICENSE`.
+Input data tables compile values from NASA and cited literature sources.
+Source data retain their original terms and attribution requirements; file-level
+provenance is recorded in `data/provenance.json`.
 
 ## Contact
 
