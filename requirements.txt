@@ -1,0 +1,6 @@
+numpy==2.4.4
+pandas==3.0.1
+matplotlib==3.8.4
+nbconvert==7.16.4
+ipykernel==6.29.4
+numexpr>=2.10.2
