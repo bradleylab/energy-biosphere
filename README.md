@@ -23,10 +23,22 @@ JGR: Planets).
 
 ## Running the notebook
 
-Run `biosphere_size_model_v5.ipynb` top-to-bottom from the repo root.
-Figures are written to `plots/`.
+Install the tested Python dependencies:
 
-Dependencies: `numpy`, `pandas`, `matplotlib`. Tested with Python 3.11.
+```bash
+python -m pip install -r requirements.txt
+```
+
+Run `biosphere_size_model_v5.ipynb` top-to-bottom from the repo root.
+Figures are written to `plots/`, which the notebook creates automatically.
+
+The command-line reproducibility check is:
+
+```bash
+python -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=600 --output executed.ipynb biosphere_size_model_v5.ipynb
+```
+
+Tested with Python 3.11.9; package versions are recorded in `requirements.txt`.
 
 ## Citation
 
