@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the manuscript and this repository."
+type: software
+title: "energy-biosphere"
+authors:
+  - family-names: Hinkston
+    given-names: Maggie
+    email: hinkston.m@wustl.edu
+    affiliation: "Department of Earth, Environmental, and Planetary Sciences, Washington University in St. Louis"
+  - family-names: Bradley
+    given-names: Alex S.
+    email: abradley@wustl.edu
+    affiliation: "Department of Earth, Environmental, and Planetary Sciences, Washington University in St. Louis"
+repository-code: "https://github.com/bradleylab/energy-biosphere"
+license: MIT
+keywords:
+  - astrobiology
+  - biosphere
+  - exergy
+  - planetary science
+  - thermodynamics
+preferred-citation:
+  type: article
+  title: "Free Energy Budgets as Thermodynamic Constraints on Maximum Biosphere Size"
+  authors:
+    - family-names: Hinkston
+      given-names: Maggie
+      email: hinkston.m@wustl.edu
+      affiliation: "Department of Earth, Environmental, and Planetary Sciences, Washington University in St. Louis"
+    - family-names: Bradley
+      given-names: Alex S.
+      email: abradley@wustl.edu
+      affiliation: "Department of Earth, Environmental, and Planetary Sciences, Washington University in St. Louis"
+  journal: "Journal of Geophysical Research: Planets"
+  year: 2026
