@@ -6,7 +6,7 @@ JGR: Planets).
 
 ## What this repo contains
 
-- `biosphere_size_model_v5.ipynb` — analysis notebook that reproduces
+- `biosphere_size_model.ipynb` — analysis notebook that reproduces
   every figure and table in the manuscript. Computes cumulative free
   energy budgets for 28 Solar System bodies, applies source-specific
   exergy efficiencies (Petela for stellar, Carnot for radiogenic,
@@ -29,13 +29,13 @@ Install the tested Python dependencies:
 python -m pip install -r requirements.txt
 ```
 
-Run `biosphere_size_model_v5.ipynb` top-to-bottom from the repo root.
+Run `biosphere_size_model.ipynb` top-to-bottom from the repo root.
 Figures are written to `plots/`, which the notebook creates automatically.
 
 The command-line reproducibility check is:
 
 ```bash
-python -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=600 --output executed.ipynb biosphere_size_model_v5.ipynb
+python -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=600 --output executed.ipynb biosphere_size_model.ipynb
 ```
 
 Tested with Python 3.11.9; package versions are recorded in `requirements.txt`.
