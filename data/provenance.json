@@ -107,6 +107,7 @@
   },
   "exoplanet_data": {
     "source": "NASA Exoplanet Archive, accessed 2026-03-13",
+    "stored_columns_note": "The repository copy of exoplanet_data.csv is a column subset of the original NASA download, retaining all rows but only the 13 columns used by the analysis (pl_name, hostname, pl_masse, pl_rade, pl_orbsmax, pl_orbper, pl_orbeccen, st_mass, st_rad, st_teff, st_lum, st_age, sy_snum). Results are identical to the full table; the complete table can be re-downloaded from the NASA Exoplanet Archive using the access date and filter below.",
     "filter": "sy_snum=1 (single-star systems only)",
     "albedo_assumption": "0.29 (Earth-like) for all exoplanets",
     "tidal_energy": "Calculated from planet's orbital parameters, does not consider any other tidal relationships (ie, moons, other planets)"
