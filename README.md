@@ -1,5 +1,7 @@
 # energy-biosphere
 
+[![DOI](https://zenodo.org/badge/1231319805.svg)](https://doi.org/10.5281/zenodo.20617962)
+
 Code and data for Hinkston & Bradley, *Free Energy Budgets as
 Thermodynamic Constraints on Maximum Biosphere Size* (in preparation,
 JGR: Planets).
@@ -52,8 +54,10 @@ Tested with Python 3.11.9; package versions are recorded in `requirements.txt`.
 ## Citation
 
 If you use this code or data, please cite the manuscript and this repository.
-Citation metadata are provided in `CITATION.cff`; DOI information will be added
-after archival release.
+Citation metadata are provided in `CITATION.cff`. Archived releases are
+deposited at Zenodo under the concept DOI
+[10.5281/zenodo.20617962](https://doi.org/10.5281/zenodo.20617962), which
+always resolves to the latest version.
 
 ## License
 

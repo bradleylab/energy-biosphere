@@ -12,6 +12,7 @@ authors:
     email: abradley@wustl.edu
     affiliation: "Department of Earth, Environmental, and Planetary Sciences, Washington University in St. Louis"
 repository-code: "https://github.com/bradleylab/energy-biosphere"
+doi: 10.5281/zenodo.20617962
 license: MIT
 keywords:
   - astrobiology
