@@ -139,6 +139,11 @@
     "units": "K",
     "source": "IAU 2015 nominal value"
   },
+  "sigma_SB": {
+    "value": 5.670374419e-08,
+    "units": "W m^-2 K^-4",
+    "source": "CODATA 2018 (Stefan-Boltzmann constant)"
+  },
   "M_EARTH_KG": {
     "value": 5.9722e+24,
     "units": "kg",
