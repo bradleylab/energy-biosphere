@@ -110,14 +110,14 @@
     "source": "Hoehler et al. 2023"
   },
   "ISE_empirical": {
-    "value": 1.67e-15,
+    "value": 8.34e-16,
     "units": "J/bit",
-    "source": "Derived from Hoehler 2023 + Landenmark 2015"
+    "source": "Derived in-notebook from modern_biosphere_power_TW and modern_biosphere_Mb at 2 bits/bp (4 equiprobable bases, log2(4)=2 bits per base pair); listed for provenance only, not read as a model input."
   },
   "ISE_empirical_error": {
-    "value": 1.14e-15,
+    "value": 5.72e-16,
     "units": "J/bit",
-    "source": "Derived from Hoehler 2023 + Landenmark 2015"
+    "source": "Derived in-notebook; fractional uncertainties in modern_biosphere_power_TW and modern_biosphere_Mb combined in quadrature. Provenance only, not read as a model input."
   },
   "k2_Q_rocky_icy": {
     "value": 0.006,
