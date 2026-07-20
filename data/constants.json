@@ -46,28 +46,28 @@
   },
   "archean_carbon_flux_min": {
     "value": 1000000.0,
-    "units": "mol/cm^2/yr",
-    "source": "Canfield et al. 2006; Sleep & Bird 2008"
+    "units": "molecules C cm^-2 s^-1",
+    "source": "Sauterey et al. 2020 (units corrected to match the code's dimensional chain and SI Table)"
   },
   "archean_carbon_flux_max": {
     "value": 10000000000.0,
-    "units": "mol/cm^2/yr",
-    "source": "Canfield et al. 2006; Sleep & Bird 2008"
+    "units": "molecules C cm^-2 s^-1",
+    "source": "Sauterey et al. 2020 (units corrected to match the code's dimensional chain and SI Table)"
   },
   "proterozoic_biomass_min_fg": {
     "value": 9e+30,
     "units": "fg C",
-    "source": "Crockford et al. 2023"
+    "source": "McMahon et al. 2018"
   },
   "proterozoic_biomass_max_fg": {
     "value": 3.85e+31,
     "units": "fg C",
-    "source": "Crockford et al. 2023"
+    "source": "McMahon et al. 2018"
   },
   "metabolic_power_min_W_per_cell": {
     "value": 1e-21,
     "units": "W/cell",
-    "source": "Hoehler & Jorgensen 2013"
+    "source": "LaRowe & Amend 2015"
   },
   "metabolic_power_max_W_per_cell": {
     "value": 3e-19,
