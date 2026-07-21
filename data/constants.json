@@ -47,12 +47,12 @@
   "archean_carbon_flux_min": {
     "value": 1000000.0,
     "units": "molecules C cm^-2 s^-1",
-    "source": "Sauterey et al. 2020 (units corrected to match the code's dimensional chain and SI Table)"
+    "source": "Sauterey et al. 2020, Nat. Commun. 11:2705 (early-Earth methanogen biomass production; units matched to code/SI)"
   },
   "archean_carbon_flux_max": {
     "value": 10000000000.0,
     "units": "molecules C cm^-2 s^-1",
-    "source": "Sauterey et al. 2020 (units corrected to match the code's dimensional chain and SI Table)"
+    "source": "Sauterey et al. 2020, Nat. Commun. 11:2705 (early-Earth methanogen biomass production; units matched to code/SI)"
   },
   "proterozoic_biomass_min_fg": {
     "value": 9e+30,
