@@ -8,7 +8,7 @@ Constraints on Cumulative Biosphere Size* (in preparation, JGR: Planets).
 ## What this repo contains
 
 - `biosphere_size_model.ipynb` — analysis notebook that reproduces
-  every figure and table in the manuscript. Computes cumulative free
+  the numerical figures and tables in the manuscript. Computes cumulative free
   energy budgets for 28 Solar System bodies, applies source-specific
   exergy efficiencies (Petela for stellar, Carnot for radiogenic,
   unity for tidal, zero for accretional), and compares each body's
@@ -30,6 +30,14 @@ Constraints on Cumulative Biosphere Size* (in preparation, JGR: Planets).
   one row per planet with key host/planet inputs plus `E_total_raw_J`,
   `F_total_J`, `F_internal_J`, `U_req_pct`, and the Earth-normalized
   ratio `U_req_over_Earth`.
+- `scripts/` — reproducible equation-audit and figure-generation scripts. In
+  particular, `audit_equations.py` and `build_v13_artifacts.py` run from this
+  repository, and the latter regenerates the temperature-dependent ISE figure
+  by calling the notebook's canonical calculation rather than a separate
+  implementation. The specialized source-verification utilities are described
+  in the reproduction notes because they require an externally obtained source
+  workbook or an audit workspace.
+- `docs/` — the v13 correction/reproduction record and public audit summary.
 
 ## Running the notebook
 
@@ -56,6 +64,23 @@ uv run --python 3.11 --with-requirements requirements.txt \
 
 The submission release was verified with Python 3.11; package versions are
 recorded in `requirements.txt`.
+
+## Version 1.2
+
+Version 1.2 accompanies manuscript version 13. It incorporates the audited
+notebook, figure-generation and equation-audit scripts, corrected radiogenic
+provenance, and the temperature-dependent ISE figure. The audit is a numerical
+and provenance record, not a claim that every physical approximation applies to
+every target. See [the reproduction notes](docs/methods-v13.md) and
+[the public audit summary](docs/equation-audit-v13.md).
+
+To regenerate the audit ledger and Eq. 15 figure without modifying source
+inputs, run:
+
+```bash
+uv run --python 3.11 --with-requirements requirements.txt \
+  python scripts/build_v13_artifacts.py --output-dir results/v1.2
+```
 
 ## Citation
 

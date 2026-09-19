@@ -1,5 +1,5 @@
 # Radiogenic heating rates from Frank, Meyer & Mojzsis (2014), Icarus 243:274-286
-# Values represent bulk internal heat production rate (W/kg) as function of stellar age
+# Values represent heat production per unit mantle mass (W/kg mantle) as a function of stellar age; the analysis applies them to total body mass as f_sil = 1.
 # age_Gyr is lookback time from present for a star of that age
 age_Gyr,k40_W_per_kg,th232_W_per_kg,u235_W_per_kg,u238_W_per_kg,total_W_per_kg
 12.4,1.2380420987970513e-14,2.6243318285685988e-12,2.116431894469154e-16,1.307383595856509e-12,3.9443074886025255e-12
