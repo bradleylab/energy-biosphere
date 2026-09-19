@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite the manuscript and this repository."
 type: software
 title: "energy-biosphere"
-version: "1.1"
-date-released: 2026-08-01
+version: "1.2"
+date-released: 2026-09-19
 authors:
   - family-names: Hinkston
     given-names: Maggie

@@ -17,13 +17,13 @@
       "satellite_orbital_parameters": "NASA SSD Planetary Satellite Mean Elements, accessed 2023-08-29."
     },
     "overrides": {
-      "Europa": {"T_bio_K": "~270 K silicate-floor ocean estimate (Nimmo & Pappalardo 2016)",
+      "Europa": {"T_bio_K": "Adopted 270 K near-freezing ocean temperature; Lawrence et al. 2024 supplies pressure/salinity-dependent freezing context, not an exact measurement of this value",
                 "albedo": "Spencer, 1999"},
       "Ganymede": {"T_bio_K": "~270 K ocean estimate",
                   "albedo": "Squyres and Veverka, 1981"},
       "Callisto": {"T_bio_K": "~250 K ocean estimate",
                   "albedo": "Squyres and Veverka, 1981"},
-      "Enceladus": {"T_bio_K": "~273 K hydrothermal vent temperature (Hsu et al. 2015)",
+      "Enceladus": {"T_bio_K": "Adopted 273 K near-freezing ocean temperature; Lawrence et al. 2024 supplies freezing context. This is not a hydrothermal vent temperature or a measured ocean mean",
                   "albedo": "Howett et al, 2010"},
       "Titan": {"T_bio_K": "~176 K ammonia-water ocean (Grasset & Sotin 1996)",
                 "albedo": "Hanel et al, 1985"},
@@ -46,7 +46,7 @@
       "k2_Q_est": "Henning et al. 2009 (rocky/icy: k2~0.3, Q~50 -> k2/Q=0.006; giants: k2/Q=3e-5)",
       "k2_Q_meas": "Body-specific measured values (see per-body entries)",
       "orbital_elements": "NASA SSD, accessed 2023-08-29",
-      "age_s": "Connelly et al. 2012 (4.6 Gyr = 1.43489e17 s for all SS bodies)"
+      "age_s": "Stored duration 1.434888e17 s is preserved; it equals 4.5468856947 Gyr with the stored 3.15576e16 s/Gyr conversion, approximately 4.55 Gyr, not exactly 4.6 Gyr"
     },
     "overrides": {
       "Moon": {
@@ -106,7 +106,7 @@
     }
   },
   "exoplanet_data": {
-    "source": "NASA Exoplanet Archive, accessed 2026-03-13",
+    "source": "NASA Exoplanet Archive PSCompPars, downloaded 2026-07-21 as recorded in exoplanet_data.csv header",
     "stored_columns_note": "The repository copy of exoplanet_data.csv is a column subset of the original NASA download, retaining all rows but only the 13 columns used by the analysis (pl_name, hostname, pl_masse, pl_rade, pl_orbsmax, pl_orbper, pl_orbeccen, st_mass, st_rad, st_teff, st_lum, st_age, sy_snum). Results are identical to the full table; the complete table can be re-downloaded from the NASA Exoplanet Archive using the access date and filter below.",
     "filter": "sy_snum=1 (single-star systems only)",
     "albedo_assumption": "0.29 (Earth-like) for all exoplanets",
@@ -114,7 +114,7 @@
   },
   "frank_heating_rates": {
     "source": "Frank, Meyer & Mojzsis (2014), Icarus 243:274-286",
-    "description": "Bulk radiogenic heating rate (W/kg) as function of stellar age"
+    "description": "Frank supplementary Table S2 heat production per unit mantle mass (W/kg mantle) as a function of stellar age; the analysis applies it to total body mass as f_sil = 1."
   },
   "radiogenic_isotope_params": {
     "half_life_sources": "Per-isotope: U238/U235 from Jaffey et al. 1971; Th232 from Le Roux & Glendenin 1963; K40 from Beckinsale & Gale 1969",
