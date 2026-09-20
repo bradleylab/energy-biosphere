@@ -65,7 +65,13 @@ uv run --python 3.11 --with-requirements requirements.txt \
 The submission release was verified with Python 3.11; package versions are
 recorded in `requirements.txt`.
 
-## Version 1.2
+## Version 1.2.1
+
+Version 1.2.1 repairs the auxiliary audit command-line interfaces and a remaining
+conditional-Landauer plot label. The scientific calculations and data are unchanged.
+The complete analysis and figure producer were tested in a fresh Python 3.11
+environment installed from `requirements.txt`; source-workbook verification
+additionally requires `openpyxl==3.1.5`.
 
 Version 1.2 accompanies manuscript version 13. It incorporates the audited
 notebook, figure-generation and equation-audit scripts, corrected radiogenic

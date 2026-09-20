@@ -6,6 +6,7 @@ selects rows with numeric present-day isotope rates, excluding blank/header rows
 """
 
 import csv
+import argparse
 import hashlib
 import json
 import math
@@ -16,12 +17,17 @@ import openpyxl
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    audit = root.parent
-    source = audit / "sources/frank_2014/1-s2.0-S0019103514004473-mmc2.xlsx"
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source-workbook', type=Path, required=True)
+    parser.add_argument('--output-dir', type=Path, required=True)
+    args = parser.parse_args()
+    source = args.source_workbook.resolve()
+    output = args.output_dir.resolve()
+    output.mkdir(parents=True, exist_ok=True)
     target = root / "data/frank_heating_rates.csv"
     sheet = openpyxl.load_workbook(source, data_only=True).worksheets[0]
     rows = list(sheet.values)
-    export = source.with_name("Frank2014_S2_complete_sheet.csv")
+    export = output / "Frank2014_S2_complete_sheet.csv"
     with export.open("w") as handle:
         csv.writer(handle).writerows(rows)
     with target.open() as handle:
@@ -67,7 +73,7 @@ def main() -> None:
         },
         "method_unchanged": True,
     }
-    (source.parent / "source_verification.json").write_text(
+    (output / "source_verification.json").write_text(
         json.dumps(summary, indent=2) + "\n"
     )
     print(json.dumps(summary, indent=2))
