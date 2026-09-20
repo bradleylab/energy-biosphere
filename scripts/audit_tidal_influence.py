@@ -8,6 +8,7 @@ No rows are dropped or imputed. Outputs go to a separate audit directory.
 """
 
 from pathlib import Path
+import argparse
 import csv
 import hashlib
 import json
@@ -15,9 +16,12 @@ import math
 
 
 def main() -> None:
-    audit = Path(__file__).resolve().parents[2]
-    source = audit / "revised_numerical"
-    output = audit / "tidal_followup_2026-09-19"
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--ledger-dir', type=Path, required=True)
+    parser.add_argument('--output-dir', type=Path, required=True)
+    args = parser.parse_args()
+    source = args.ledger_dir.resolve()
+    output = args.output_dir.resolve()
     paths = [
         source / "body_budgets.csv",
         source / "all_exoplanet_integration_windows.csv",
@@ -73,7 +77,7 @@ def main() -> None:
         summary["above_100pct_power" + suffix] = [
             r["name"] for r in exo if r[key] > 100
         ]
-    output.mkdir(exist_ok=True)
+    output.mkdir(parents=True, exist_ok=True)
     with (output / "tidal_influence.csv").open("w") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(results[0]))
         writer.writeheader()
